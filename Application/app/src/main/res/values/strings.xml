@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Corona</string>
+    <string name="details_info">Country Wise Info</string>
+    <string name="recovered">Recovered :</string>
+    <string name="total_deaths">Total Deaths :</string>
+    <string name="active_cases">Active Cases :</string>
+    <string name="total_cases">Total Cases :</string>
+    <string name="corona_virus_updates">Corona Virus Updates</string>
+    <string name="total">Total Cases :</string>
+    <string name="today_new_deaths">Today New Deaths :</string>
+    <string name="critical_cases">Critical Cases :</string>
+    <string name="total_recovered">Total Recovered :</string>
+    <string name="today_new_cases">Today New Cases :</string>
+    <string name="flag">Flag</string>
+    <string name="search">search</string>
+    <string name="total_tests">Total tests :</string>
+    <string name="affected_countries">Affected Countries :</string>
+    <string name="corona_logo">Corona Logo</string>
+</resources>

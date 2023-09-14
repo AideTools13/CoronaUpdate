@@ -1,0 +1,79 @@
+
+plugins {
+    id 'com.android.application'
+    
+}
+
+android {
+    namespace 'com.example.corona'
+    compileSdk 33
+    buildToolsVersion "33.0.3"
+
+    defaultConfig {
+        applicationId "com.example.corona"
+        multiDexEnabled true
+        minSdk 17
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+   
+	implementation("androidx.appcompat:appcompat:1.6.1")
+	implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.multidex:multidex:2.0.1")
+	testImplementation("junit:junit:4.12")
+    androidTestImplementation("androidx.test.ext:junit:1.1.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+	
+	  //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.7.1")
+    implementation("com.squareup.retrofit2:converter-gson:2.7.1")
+
+    //ViewModel LifeCycle
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    //implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-core:2.3.1")
+   
+    //material design
+    implementation("com.google.android.material:material:1.9.0")
+	
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
+    //rxJava
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.0")
+    implementation("io.reactivex.rxjava3:rxjava:3.0.0")
+
+    implementation("com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0")
+
+}
